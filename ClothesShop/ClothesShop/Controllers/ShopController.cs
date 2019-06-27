@@ -10,6 +10,8 @@ namespace ClothesShop.Controllers
     public class ShopController : Controller
     {
         private TestEntities db = new TestEntities();
+        //óc chó
+        //óc bò
         // GET: Shop
         public ActionResult Index()
         {
