@@ -10,8 +10,6 @@ namespace ClothesShop.Controllers
     public class ShopController : Controller
     {
         private TestEntities db = new TestEntities();
-        //óc chó
-        //óc bò
         // GET: Shop
         public ActionResult Index()
         {
@@ -26,10 +24,10 @@ namespace ClothesShop.Controllers
             return PartialView("ShowMenu", model);
         }
 
-        //public ActionResult _ShopLayout()
-        //{
-        //    var model = (from u in db.Catalogs where u.fcatalogID == null select u).ToList();
-        //    return View(model);
-        //}
+        public ActionResult Footer()
+        {
+           var model = (from u in db.Catalogs where u.fcatalogID == null select u).ToList();
+            return PartialView("Footer", model);
+        }
     }
 }
