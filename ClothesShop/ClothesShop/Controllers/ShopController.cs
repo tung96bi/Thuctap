@@ -29,6 +29,5 @@ namespace ClothesShop.Controllers
            var model = (from u in db.Catalogs where u.fcatalogID == null select u).ToList();
             return PartialView("Footer", model);
         }
-        //ABCCCC
     }
 }
